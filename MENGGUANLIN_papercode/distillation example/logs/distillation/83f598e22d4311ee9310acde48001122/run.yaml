@@ -1,0 +1,17 @@
+comment: cifar10
+commit: unknown
+commit_message: ''
+distributed_rank: 0
+distributed_world_size: 0
+is_dirty: false
+load_run: null
+name: distillation
+notes: ''
+python_file: notebook.ipynb
+repo_remotes: []
+start_step: 0
+tags:
+- distillation
+trial_date: '2023-07-28'
+trial_time: '20:37:29'
+uuid: 83f598e22d4311ee9310acde48001122

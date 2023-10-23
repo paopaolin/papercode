@@ -1,0 +1,669 @@
+accuracy:
+  computed: labml_helpers.metrics.accuracy.Accuracy
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: accuracy
+  options: []
+  order: 3
+  type: <class 'labml_helpers.metrics.accuracy.Accuracy'>
+  value: null
+dataset_name:
+  computed: CIFAR10
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: dataset_name
+  options:
+  - CIFAR10
+  - MNIST
+  order: 6
+  type: <class 'str'>
+  value: null
+dataset_transforms:
+  computed: "Compose(\n    ToTensor()\n    Normalize(mean=(0.5, 0.5, 0.5), std=(0.5,\
+    \ 0.5, 0.5))\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: dataset_transforms
+  options:
+  - mnist_transforms
+  - cifar10_transforms
+  order: 8
+  type: <class 'torchvision.transforms.transforms.Compose'>
+  value: null
+device:
+  computed: cpu
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: device
+  options: []
+  order: 1
+  type: <class 'torch.device'>
+  value: null
+device.cuda_device:
+  computed: 0
+  is_explicitly_specified: false
+  is_hyperparam: false
+  is_meta: null
+  name: cuda_device
+  options: []
+  order: 3
+  type: <class 'int'>
+  value: null
+device.device:
+  computed: cpu
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: device
+  options:
+  - _device
+  order: 0
+  type: <class 'torch.device'>
+  value: null
+device.device_info:
+  computed: CPU
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: device_info
+  options:
+  - _device_info
+  order: 1
+  type: <class 'labml_helpers.device.DeviceInfo'>
+  value: null
+device.use_cuda:
+  computed: true
+  is_explicitly_specified: false
+  is_hyperparam: false
+  is_meta: null
+  name: use_cuda
+  options: []
+  order: 2
+  type: <class 'bool'>
+  value: null
+epochs:
+  computed: 10
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: epochs
+  options: []
+  order: 21
+  type: <class 'int'>
+  value: null
+inner_iterations:
+  computed: 10
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: inner_iterations
+  options: []
+  order: 11
+  type: <class 'int'>
+  value: null
+is_loop_on_interrupt:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: is_loop_on_interrupt
+  options: []
+  order: 27
+  type: <class 'bool'>
+  value: null
+is_save_models:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: is_save_models
+  options: []
+  order: 23
+  type: <class 'bool'>
+  value: null
+is_track_time:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: is_track_time
+  options: []
+  order: 13
+  type: <class 'bool'>
+  value: null
+kl_div_loss:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: kl_div_loss
+  options: []
+  order: -1
+  type: <class 'torch.nn.modules.loss.KLDivLoss'>
+  value: null
+label_loss_weight:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: label_loss_weight
+  options: []
+  order: -1
+  type: <class 'float'>
+  value: null
+large:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: large
+  options:
+  - _large_model
+  order: -1
+  type: <class 'labml_nn.distillation.large.LargeModel'>
+  value: "LargeModel(\n  (layers): Sequential(\n    (0): Dropout(p=0.1, inplace=False)\n\
+    \    (1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n \
+    \   (2): BatchNorm()\n    (3): ReLU(inplace=True)\n    (4): Dropout(p=0.1, inplace=False)\n\
+    \    (5): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n\
+    \    (6): BatchNorm()\n    (7): ReLU(inplace=True)\n    (8): MaxPool2d(kernel_size=2,\
+    \ stride=2, padding=0, dilation=1, ceil_mode=False)\n    (9): Dropout(p=0.1, inplace=False)\n\
+    \    (10): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n\
+    \    (11): BatchNorm()\n    (12): ReLU(inplace=True)\n    (13): Dropout(p=0.1,\
+    \ inplace=False)\n    (14): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1),\
+    \ padding=(1, 1))\n    (15): BatchNorm()\n    (16): ReLU(inplace=True)\n    (17):\
+    \ MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n\
+    \    (18): Dropout(p=0.1, inplace=False)\n    (19): Conv2d(128, 256, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (20): BatchNorm()\n    (21): ReLU(inplace=True)\n\
+    \    (22): Dropout(p=0.1, inplace=False)\n    (23): Conv2d(256, 256, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (24): BatchNorm()\n    (25): ReLU(inplace=True)\n\
+    \    (26): Dropout(p=0.1, inplace=False)\n    (27): Conv2d(256, 256, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (28): BatchNorm()\n    (29): ReLU(inplace=True)\n\
+    \    (30): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n\
+    \    (31): Dropout(p=0.1, inplace=False)\n    (32): Conv2d(256, 512, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (33): BatchNorm()\n    (34): ReLU(inplace=True)\n\
+    \    (35): Dropout(p=0.1, inplace=False)\n    (36): Conv2d(512, 512, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (37): BatchNorm()\n    (38): ReLU(inplace=True)\n\
+    \    (39): Dropout(p=0.1, inplace=False)\n    (40): Conv2d(512, 512, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (41): BatchNorm()\n    (42): ReLU(inplace=True)\n\
+    \    (43): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n\
+    \    (44): Dropout(p=0.1, inplace=False)\n    (45): Conv2d(512, 512, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (46): BatchNorm()\n    (47): ReLU(inplace=True)\n\
+    \    (48): Dropout(p=0.1, inplace=False)\n    (49): Conv2d(512, 512, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (50): BatchNorm()\n    (51): ReLU(inplace=True)\n\
+    \    (52): Dropout(p=0.1, inplace=False)\n    (53): Conv2d(512, 512, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (54): BatchNorm()\n    (55): ReLU(inplace=True)\n\
+    \    (56): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n\
+    \  )\n  (fc): Linear(in_features=512, out_features=10, bias=True)\n)"
+log_new_line_interval:
+  computed: 1
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: log_new_line_interval
+  options: []
+  order: 24
+  type: <class 'int'>
+  value: null
+log_write_interval:
+  computed: 1
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: log_write_interval
+  options: []
+  order: 25
+  type: <class 'int'>
+  value: null
+loop_count:
+  computed: 10
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: loop_count
+  options:
+  - _data_loop_count
+  order: 20
+  type: <class 'int'>
+  value: null
+loop_step:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: loop_step
+  options: []
+  order: 22
+  type: <class 'int'>
+  value: null
+loss_func:
+  computed: CrossEntropyLoss()
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: loss_func
+  options: []
+  order: 28
+  type: <class 'torch.nn.modules.loss.CrossEntropyLoss'>
+  value: null
+mode:
+  computed: labml_helpers.train_valid.ModeState
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: mode
+  options:
+  - from_type
+  order: 2
+  type: <class 'labml_helpers.train_valid.ModeState'>
+  value: null
+model:
+  computed: "SmallModel(\n  (layers): Sequential(\n    (0): Conv2d(3, 32, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (1): BatchNorm()\n    (2): ReLU(inplace=True)\n\
+    \    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n\
+    \    (4): BatchNorm()\n    (5): ReLU(inplace=True)\n    (6): MaxPool2d(kernel_size=2,\
+    \ stride=2, padding=0, dilation=1, ceil_mode=False)\n    (7): Conv2d(32, 64, kernel_size=(3,\
+    \ 3), stride=(1, 1), padding=(1, 1))\n    (8): BatchNorm()\n    (9): ReLU(inplace=True)\n\
+    \    (10): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n\
+    \    (11): BatchNorm()\n    (12): ReLU(inplace=True)\n    (13): MaxPool2d(kernel_size=2,\
+    \ stride=2, padding=0, dilation=1, ceil_mode=False)\n    (14): Conv2d(64, 128,\
+    \ kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n    (15): BatchNorm()\n\
+    \    (16): ReLU(inplace=True)\n    (17): MaxPool2d(kernel_size=2, stride=2, padding=0,\
+    \ dilation=1, ceil_mode=False)\n    (18): Conv2d(128, 128, kernel_size=(3, 3),\
+    \ stride=(1, 1), padding=(1, 1))\n    (19): BatchNorm()\n    (20): ReLU(inplace=True)\n\
+    \    (21): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n\
+    \    (22): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n\
+    \    (23): BatchNorm()\n    (24): ReLU(inplace=True)\n    (25): MaxPool2d(kernel_size=2,\
+    \ stride=2, padding=0, dilation=1, ceil_mode=False)\n  )\n  (fc): Linear(in_features=128,\
+    \ out_features=10, bias=True)\n)"
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: model
+  options:
+  - _large_model
+  - _small_model
+  - _small_student_model
+  order: 0
+  type: <class 'labml_helpers.module.Module'>
+  value: _small_student_model
+optimizer:
+  computed: "Adam (\nParameter Group 0\n    betas: (0.9, 0.999)\n    eps: 1e-08\n\
+    \    lr: 0.00025\n    weight_decay: 0.0\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: optimizer
+  options:
+  - _optimizer
+  order: 29
+  type: <class 'torch.optim.adam.Adam'>
+  value: null
+optimizer.amsgrad:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: amsgrad
+  options: []
+  order: 1
+  type: <class 'bool'>
+  value: null
+optimizer.betas:
+  computed:
+  - 0.9
+  - 0.999
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: betas
+  options: []
+  order: 4
+  type: typing.Tuple[float, float]
+  value: null
+optimizer.d_model:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: d_model
+  options: []
+  order: -1
+  type: <class 'int'>
+  value: null
+optimizer.degenerate_to_sgd:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: degenerate_to_sgd
+  options: []
+  order: -1
+  type: <class 'bool'>
+  value: null
+optimizer.eps:
+  computed: 1.0e-08
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: eps
+  options: []
+  order: 5
+  type: <class 'float'>
+  value: null
+optimizer.learning_rate:
+  computed: 0.00025
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: learning_rate
+  options: []
+  order: 3
+  type: <class 'float'>
+  value: 0.00025
+optimizer.momentum:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: momentum
+  options: []
+  order: -1
+  type: <class 'float'>
+  value: null
+optimizer.optimized_adam_update:
+  computed: true
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: optimized_adam_update
+  options: []
+  order: 6
+  type: <class 'bool'>
+  value: null
+optimizer.optimizer:
+  computed: "Adam (\nParameter Group 0\n    betas: (0.9, 0.999)\n    eps: 1e-08\n\
+    \    lr: 0.00025\n    weight_decay: 0.0\n)"
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: optimizer
+  options:
+  - SGD
+  - Adam
+  - AdamW
+  - RAdam
+  - AdaBelief
+  - Noam
+  - Sophia
+  - AdamWarmupCosineDecay
+  order: 0
+  type: <class 'torch.optim.adam.Adam'>
+  value: Adam
+optimizer.parameters:
+  computed: <generator object Module.parameters at 0x15b54ce40>
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: parameters
+  options: []
+  order: 2
+  type: <built-in function any>
+  value: <generator object Module.parameters at 0x15b54ce40>
+optimizer.rectify:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: rectify
+  options: []
+  order: -1
+  type: <class 'bool'>
+  value: null
+optimizer.rho:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: rho
+  options: []
+  order: -1
+  type: <class 'float'>
+  value: null
+optimizer.total_steps:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: total_steps
+  options: []
+  order: -1
+  type: <class 'int'>
+  value: null
+optimizer.warmup:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: warmup
+  options: []
+  order: -1
+  type: <class 'int'>
+  value: null
+optimizer.weight_decay:
+  computed: 0.0
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: weight_decay
+  options: []
+  order: 8
+  type: <class 'float'>
+  value: null
+optimizer.weight_decay_absolute:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: weight_decay_absolute
+  options: []
+  order: 10
+  type: <class 'bool'>
+  value: null
+optimizer.weight_decay_obj:
+  computed: labml_nn.optimizers.WeightDecay
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: weight_decay_obj
+  options:
+  - L2
+  order: 7
+  type: <class 'labml_nn.optimizers.WeightDecay'>
+  value: null
+optimizer.weight_decouple:
+  computed: true
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: weight_decouple
+  options: []
+  order: 9
+  type: <class 'bool'>
+  value: null
+save_models_interval:
+  computed: 1
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: save_models_interval
+  options: []
+  order: 26
+  type: <class 'int'>
+  value: null
+soft_targets_weight:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: soft_targets_weight
+  options: []
+  order: -1
+  type: <class 'float'>
+  value: null
+state_modules:
+  computed:
+  - labml_helpers.metrics.accuracy.Accuracy
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: state_modules
+  options: []
+  order: 12
+  type: typing.List[labml_helpers.metrics.StateModule]
+  value:
+  - labml_helpers.metrics.accuracy.Accuracy
+temperature:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: temperature
+  options: []
+  order: -1
+  type: <class 'float'>
+  value: null
+train_batch_size:
+  computed: 64
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: train_batch_size
+  options: []
+  order: 17
+  type: <class 'int'>
+  value: null
+train_dataset:
+  computed: "Dataset CIFAR10\n    Number of datapoints: 50000\n    Root location:\
+    \ /Users/jianyiyang/Desktop/work/deepLearning/summerClass/final/distillation example/data\n\
+    \    Split: Train\n    StandardTransform\nTransform: Compose(\n              \
+    \ ToTensor()\n               Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))\n\
+    \           )"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: train_dataset
+  options:
+  - mnist_train_dataset
+  - cifar10_train_dataset
+  - cifar10_train_augmented
+  order: 16
+  type: <class 'torchvision.datasets.cifar.CIFAR10'>
+  value: null
+train_loader:
+  computed: torch.utils.data.dataloader.DataLoader
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: train_loader
+  options:
+  - mnist_train_loader
+  - cifar10_train_loader
+  order: 15
+  type: <class 'torch.utils.data.dataloader.DataLoader'>
+  value: null
+train_loader_shuffle:
+  computed: true
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: train_loader_shuffle
+  options: []
+  order: 18
+  type: <class 'bool'>
+  value: null
+trainer:
+  computed: labml_helpers.train_valid.Trainer
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: trainer
+  options:
+  - _default_trainer
+  order: 14
+  type: <class 'labml_helpers.train_valid.Trainer'>
+  value: null
+training_loop:
+  computed: LabTrainingLoop
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: training_loop
+  options:
+  - _loop_configs
+  order: 19
+  type: <class 'labml_helpers.training_loop.TrainingLoop'>
+  value: null
+valid_batch_size:
+  computed: 1024
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: valid_batch_size
+  options: []
+  order: 9
+  type: <class 'int'>
+  value: null
+valid_dataset:
+  computed: "Dataset CIFAR10\n    Number of datapoints: 10000\n    Root location:\
+    \ /Users/jianyiyang/Desktop/work/deepLearning/summerClass/final/distillation example/data\n\
+    \    Split: Test\n    StandardTransform\nTransform: Compose(\n               ToTensor()\n\
+    \               Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))\n       \
+    \    )"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: valid_dataset
+  options:
+  - mnist_valid_dataset
+  - cifar10_valid_dataset
+  - cifar10_valid_no_augment
+  order: 7
+  type: <class 'torchvision.datasets.cifar.CIFAR10'>
+  value: null
+valid_loader:
+  computed: torch.utils.data.dataloader.DataLoader
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: valid_loader
+  options:
+  - mnist_valid_loader
+  - cifar10_valid_loader
+  order: 5
+  type: <class 'torch.utils.data.dataloader.DataLoader'>
+  value: null
+valid_loader_shuffle:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: valid_loader_shuffle
+  options: []
+  order: 10
+  type: <class 'bool'>
+  value: null
+validator:
+  computed: labml_helpers.train_valid.Trainer
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: validator
+  options:
+  - _default_validator
+  order: 4
+  type: <class 'labml_helpers.train_valid.Trainer'>
+  value: null

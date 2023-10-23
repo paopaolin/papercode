@@ -1,0 +1,1014 @@
+indicators:
+  accuracy.train:
+    class_name: Scalar
+    is_print: true
+    name: accuracy.train
+  accuracy.valid:
+    class_name: Scalar
+    is_print: true
+    name: accuracy.valid
+  grad.model.fc.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.fc.bias.l1
+  grad.model.fc.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.fc.bias.l2
+  grad.model.fc.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.fc.bias.mean
+  grad.model.fc.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.fc.weight.l1
+  grad.model.fc.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.fc.weight.l2
+  grad.model.fc.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.fc.weight.mean
+  grad.model.layers.0.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.0.bias.l1
+  grad.model.layers.0.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.0.bias.l2
+  grad.model.layers.0.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.0.bias.mean
+  grad.model.layers.0.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.0.weight.l1
+  grad.model.layers.0.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.0.weight.l2
+  grad.model.layers.0.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.0.weight.mean
+  grad.model.layers.1.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.1.scale.l1
+  grad.model.layers.1.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.1.scale.l2
+  grad.model.layers.1.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.1.scale.mean
+  grad.model.layers.1.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.1.shift.l1
+  grad.model.layers.1.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.1.shift.l2
+  grad.model.layers.1.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.1.shift.mean
+  grad.model.layers.10.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.10.bias.l1
+  grad.model.layers.10.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.10.bias.l2
+  grad.model.layers.10.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.10.bias.mean
+  grad.model.layers.10.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.10.weight.l1
+  grad.model.layers.10.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.10.weight.l2
+  grad.model.layers.10.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.10.weight.mean
+  grad.model.layers.11.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.11.scale.l1
+  grad.model.layers.11.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.11.scale.l2
+  grad.model.layers.11.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.11.scale.mean
+  grad.model.layers.11.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.11.shift.l1
+  grad.model.layers.11.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.11.shift.l2
+  grad.model.layers.11.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.11.shift.mean
+  grad.model.layers.14.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.14.bias.l1
+  grad.model.layers.14.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.14.bias.l2
+  grad.model.layers.14.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.14.bias.mean
+  grad.model.layers.14.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.14.weight.l1
+  grad.model.layers.14.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.14.weight.l2
+  grad.model.layers.14.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.14.weight.mean
+  grad.model.layers.15.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.15.scale.l1
+  grad.model.layers.15.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.15.scale.l2
+  grad.model.layers.15.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.15.scale.mean
+  grad.model.layers.15.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.15.shift.l1
+  grad.model.layers.15.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.15.shift.l2
+  grad.model.layers.15.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.15.shift.mean
+  grad.model.layers.18.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.18.bias.l1
+  grad.model.layers.18.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.18.bias.l2
+  grad.model.layers.18.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.18.bias.mean
+  grad.model.layers.18.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.18.weight.l1
+  grad.model.layers.18.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.18.weight.l2
+  grad.model.layers.18.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.18.weight.mean
+  grad.model.layers.19.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.19.scale.l1
+  grad.model.layers.19.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.19.scale.l2
+  grad.model.layers.19.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.19.scale.mean
+  grad.model.layers.19.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.19.shift.l1
+  grad.model.layers.19.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.19.shift.l2
+  grad.model.layers.19.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.19.shift.mean
+  grad.model.layers.22.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.22.bias.l1
+  grad.model.layers.22.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.22.bias.l2
+  grad.model.layers.22.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.22.bias.mean
+  grad.model.layers.22.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.22.weight.l1
+  grad.model.layers.22.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.22.weight.l2
+  grad.model.layers.22.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.22.weight.mean
+  grad.model.layers.23.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.23.scale.l1
+  grad.model.layers.23.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.23.scale.l2
+  grad.model.layers.23.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.23.scale.mean
+  grad.model.layers.23.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.23.shift.l1
+  grad.model.layers.23.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.23.shift.l2
+  grad.model.layers.23.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.23.shift.mean
+  grad.model.layers.3.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.3.bias.l1
+  grad.model.layers.3.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.3.bias.l2
+  grad.model.layers.3.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.3.bias.mean
+  grad.model.layers.3.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.3.weight.l1
+  grad.model.layers.3.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.3.weight.l2
+  grad.model.layers.3.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.3.weight.mean
+  grad.model.layers.4.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.4.scale.l1
+  grad.model.layers.4.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.4.scale.l2
+  grad.model.layers.4.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.4.scale.mean
+  grad.model.layers.4.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.4.shift.l1
+  grad.model.layers.4.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.4.shift.l2
+  grad.model.layers.4.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.4.shift.mean
+  grad.model.layers.7.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.7.bias.l1
+  grad.model.layers.7.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.7.bias.l2
+  grad.model.layers.7.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.7.bias.mean
+  grad.model.layers.7.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.7.weight.l1
+  grad.model.layers.7.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.7.weight.l2
+  grad.model.layers.7.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.7.weight.mean
+  grad.model.layers.8.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.8.scale.l1
+  grad.model.layers.8.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.8.scale.l2
+  grad.model.layers.8.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.8.scale.mean
+  grad.model.layers.8.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.8.shift.l1
+  grad.model.layers.8.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.8.shift.l2
+  grad.model.layers.8.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: grad.model.layers.8.shift.mean
+  loss.train:
+    class_name: Scalar
+    is_print: true
+    name: loss.train
+  loss.valid:
+    class_name: Scalar
+    is_print: true
+    name: loss.valid
+  model:
+    class_name: PyTorchModule
+    is_print: true
+    name: model
+  module.model.fc.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.fc.mean
+  module.model.fc.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.fc.var
+  module.model.full.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.full.mean
+  module.model.full.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.full.var
+  module.model.layers.0.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.0.mean
+  module.model.layers.0.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.0.var
+  module.model.layers.1.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.1.mean
+  module.model.layers.1.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.1.var
+  module.model.layers.10.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.10.mean
+  module.model.layers.10.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.10.var
+  module.model.layers.11.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.11.mean
+  module.model.layers.11.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.11.var
+  module.model.layers.12.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.12.mean
+  module.model.layers.12.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.12.var
+  module.model.layers.13.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.13.mean
+  module.model.layers.13.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.13.var
+  module.model.layers.14.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.14.mean
+  module.model.layers.14.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.14.var
+  module.model.layers.15.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.15.mean
+  module.model.layers.15.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.15.var
+  module.model.layers.16.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.16.mean
+  module.model.layers.16.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.16.var
+  module.model.layers.17.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.17.mean
+  module.model.layers.17.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.17.var
+  module.model.layers.18.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.18.mean
+  module.model.layers.18.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.18.var
+  module.model.layers.19.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.19.mean
+  module.model.layers.19.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.19.var
+  module.model.layers.2.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.2.mean
+  module.model.layers.2.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.2.var
+  module.model.layers.20.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.20.mean
+  module.model.layers.20.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.20.var
+  module.model.layers.21.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.21.mean
+  module.model.layers.21.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.21.var
+  module.model.layers.22.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.22.mean
+  module.model.layers.22.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.22.var
+  module.model.layers.23.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.23.mean
+  module.model.layers.23.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.23.var
+  module.model.layers.24.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.24.mean
+  module.model.layers.24.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.24.var
+  module.model.layers.25.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.25.mean
+  module.model.layers.25.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.25.var
+  module.model.layers.3.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.3.mean
+  module.model.layers.3.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.3.var
+  module.model.layers.4.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.4.mean
+  module.model.layers.4.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.4.var
+  module.model.layers.5.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.5.mean
+  module.model.layers.5.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.5.var
+  module.model.layers.6.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.6.mean
+  module.model.layers.6.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.6.var
+  module.model.layers.7.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.7.mean
+  module.model.layers.7.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.7.var
+  module.model.layers.8.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.8.mean
+  module.model.layers.8.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.8.var
+  module.model.layers.9.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.9.mean
+  module.model.layers.9.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.9.var
+  module.model.layers.mean:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.mean
+  module.model.layers.var:
+    class_name: Scalar
+    is_print: false
+    name: module.model.layers.var
+  param.model.fc.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.fc.bias.l1
+  param.model.fc.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.fc.bias.l2
+  param.model.fc.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.fc.bias.mean
+  param.model.fc.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.fc.weight.l1
+  param.model.fc.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.fc.weight.l2
+  param.model.fc.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.fc.weight.mean
+  param.model.layers.0.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.0.bias.l1
+  param.model.layers.0.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.0.bias.l2
+  param.model.layers.0.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.0.bias.mean
+  param.model.layers.0.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.0.weight.l1
+  param.model.layers.0.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.0.weight.l2
+  param.model.layers.0.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.0.weight.mean
+  param.model.layers.1.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.1.scale.l1
+  param.model.layers.1.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.1.scale.l2
+  param.model.layers.1.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.1.scale.mean
+  param.model.layers.1.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.1.shift.l1
+  param.model.layers.1.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.1.shift.l2
+  param.model.layers.1.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.1.shift.mean
+  param.model.layers.10.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.10.bias.l1
+  param.model.layers.10.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.10.bias.l2
+  param.model.layers.10.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.10.bias.mean
+  param.model.layers.10.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.10.weight.l1
+  param.model.layers.10.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.10.weight.l2
+  param.model.layers.10.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.10.weight.mean
+  param.model.layers.11.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.11.scale.l1
+  param.model.layers.11.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.11.scale.l2
+  param.model.layers.11.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.11.scale.mean
+  param.model.layers.11.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.11.shift.l1
+  param.model.layers.11.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.11.shift.l2
+  param.model.layers.11.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.11.shift.mean
+  param.model.layers.14.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.14.bias.l1
+  param.model.layers.14.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.14.bias.l2
+  param.model.layers.14.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.14.bias.mean
+  param.model.layers.14.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.14.weight.l1
+  param.model.layers.14.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.14.weight.l2
+  param.model.layers.14.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.14.weight.mean
+  param.model.layers.15.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.15.scale.l1
+  param.model.layers.15.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.15.scale.l2
+  param.model.layers.15.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.15.scale.mean
+  param.model.layers.15.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.15.shift.l1
+  param.model.layers.15.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.15.shift.l2
+  param.model.layers.15.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.15.shift.mean
+  param.model.layers.18.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.18.bias.l1
+  param.model.layers.18.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.18.bias.l2
+  param.model.layers.18.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.18.bias.mean
+  param.model.layers.18.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.18.weight.l1
+  param.model.layers.18.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.18.weight.l2
+  param.model.layers.18.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.18.weight.mean
+  param.model.layers.19.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.19.scale.l1
+  param.model.layers.19.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.19.scale.l2
+  param.model.layers.19.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.19.scale.mean
+  param.model.layers.19.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.19.shift.l1
+  param.model.layers.19.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.19.shift.l2
+  param.model.layers.19.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.19.shift.mean
+  param.model.layers.22.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.22.bias.l1
+  param.model.layers.22.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.22.bias.l2
+  param.model.layers.22.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.22.bias.mean
+  param.model.layers.22.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.22.weight.l1
+  param.model.layers.22.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.22.weight.l2
+  param.model.layers.22.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.22.weight.mean
+  param.model.layers.23.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.23.scale.l1
+  param.model.layers.23.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.23.scale.l2
+  param.model.layers.23.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.23.scale.mean
+  param.model.layers.23.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.23.shift.l1
+  param.model.layers.23.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.23.shift.l2
+  param.model.layers.23.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.23.shift.mean
+  param.model.layers.3.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.3.bias.l1
+  param.model.layers.3.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.3.bias.l2
+  param.model.layers.3.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.3.bias.mean
+  param.model.layers.3.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.3.weight.l1
+  param.model.layers.3.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.3.weight.l2
+  param.model.layers.3.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.3.weight.mean
+  param.model.layers.4.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.4.scale.l1
+  param.model.layers.4.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.4.scale.l2
+  param.model.layers.4.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.4.scale.mean
+  param.model.layers.4.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.4.shift.l1
+  param.model.layers.4.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.4.shift.l2
+  param.model.layers.4.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.4.shift.mean
+  param.model.layers.7.bias.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.7.bias.l1
+  param.model.layers.7.bias.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.7.bias.l2
+  param.model.layers.7.bias.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.7.bias.mean
+  param.model.layers.7.weight.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.7.weight.l1
+  param.model.layers.7.weight.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.7.weight.l2
+  param.model.layers.7.weight.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.7.weight.mean
+  param.model.layers.8.scale.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.8.scale.l1
+  param.model.layers.8.scale.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.8.scale.l2
+  param.model.layers.8.scale.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.8.scale.mean
+  param.model.layers.8.shift.l1:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.8.shift.l1
+  param.model.layers.8.shift.l2:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.8.shift.l2
+  param.model.layers.8.shift.mean:
+    class_name: Scalar
+    is_print: false
+    name: param.model.layers.8.shift.mean
+  time.loop:
+    class_name: Scalar
+    is_print: false
+    name: time.loop
+wildcards:
+  '*':
+    class_name: Scalar
+    is_print: true
+    name: '*'
+  accuracy.*:
+    class_name: Scalar
+    is_print: true
+    name: accuracy.*
+  grad.*:
+    class_name: Scalar
+    is_print: false
+    name: grad.*
+  hp.*:
+    class_name: Scalar
+    is_print: false
+    name: hp.*
+  loss.*:
+    class_name: Scalar
+    is_print: true
+    name: loss.*
+  module.*:
+    class_name: Scalar
+    is_print: false
+    name: module.*
+  optim.*:
+    class_name: Scalar
+    is_print: false
+    name: optim.*
+  param.*:
+    class_name: Scalar
+    is_print: false
+    name: param.*
+  time.*:
+    class_name: Scalar
+    is_print: false
+    name: time.*
